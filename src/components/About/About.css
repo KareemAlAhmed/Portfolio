@@ -1,0 +1,33 @@
+.about .about-text h1 span{
+    color: var(--text-hover-color);
+}
+.about-text p{
+    color: var(--text-color);
+}
+.logo{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.custome-btn{
+    background: #eee;
+    color: #5b5b5b;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 13px 29px;
+    font-size: 14px;
+    line-height: normal;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+}
+.grp-btn a:nth-child(1):hover{
+    color: var(--text-hover-color);
+}
+.grp-btn a:nth-child(2){
+    background-color: #474559 ;
+    color: white;
+}
+.grp-btn a:nth-child(2):hover{
+    background-color: var(--text-hover-color);
+}

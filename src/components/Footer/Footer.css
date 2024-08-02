@@ -1,0 +1,7 @@
+.footer p:last-of-type a{
+    color: #0056b3;
+    transition: color 0.3s ease;
+}
+.footer p:last-of-type a:hover{
+    color: var(--text-hover-color);
+}

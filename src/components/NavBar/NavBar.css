@@ -1,0 +1,42 @@
+.navBar{
+    z-index: 999999;
+    transition: all 200ms linear;
+    padding: 20px 1rem;
+    background-color: var(--back-color);
+    border-color: transparent;
+    
+}
+.navBrand h1{
+    margin-bottom: 0;
+}
+.navBrand:hover h1{
+    color: var(--text-hover-color);
+}
+.navBrand:hover svg{
+    fill: var(--text-hover-color);
+}
+
+.container{
+    max-width: 1140px;
+}
+
+.container ul li{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}    
+.container ul li span{
+    display: inline-block;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.container ul li a{
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.container ul li a:hover{
+    color: var(--text-hover-color);
+}
+.theme button{
+    color: white;
+}
+

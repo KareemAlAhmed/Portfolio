@@ -1,0 +1,10 @@
+.education h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+
+.education small{
+    color: #474559;
+}

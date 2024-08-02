@@ -1,0 +1,64 @@
+.contactInfo .contact-text{
+    background: #474559;
+    border-radius: 0 0 3px 3px;
+    position: relative;
+    bottom: 8px;
+}
+.contactForm h2{
+    font-size: 2.4em;
+    font-weight: bold;
+}
+.contactForm .form-control:not(textarea) {
+    height: 48px;
+}
+.contactForm .form-control {
+    background: transparent;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    font-weight: bold;
+    margin: 16px 0;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.contactForm form div{
+    padding: 0 15px;
+}
+.contactForm form div:first-of-type,.msg{
+    padding-left: 0 !important;
+}
+.contactForm textarea{
+    height: auto;
+}
+.contactForm form div:last-of-type{
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+.submit-btn{
+    background: #ffc200 !important;
+    border-radius: 50px !important;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.contactForm .submit-btn:hover {
+    background: #474559 !important;
+}
+.contactForm .form-control:hover, .contactForm .form-control:focus {
+    border-color: #ffc200;
+}

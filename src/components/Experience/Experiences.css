@@ -1,0 +1,51 @@
+.experiences h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+.timeline-wrapper::before {
+    content: "";
+    background: #474559;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 38px;
+}
+.timeline-wrapper:last-child::before{
+    height: 0;
+}
+.timeline-wrapper .timeline-yr{
+    background: #474559;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 100%;
+}
+.timeline-wrapper .timeline-yr span{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    line-height: 75px;
+}
+.timeline-wrapper .timeline-info {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 432px;
+    margin-left: 6em;
+}
+.timeline-wrapper .timeline-info h3{
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.timeline-wrapper .timeline-info h6{
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.timeline-wrapper .timeline-info p{
+ color: var( --text-color);
+ margin-bottom: 1rem;
+}
