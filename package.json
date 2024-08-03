@@ -6,10 +6,17 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.3",
     "bootstrap": "^5.3.3",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "stream": "^0.0.3",
+    "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,5 +45,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.7"
+  },
+  "browser": {
+    "crypto": false
   }
 }

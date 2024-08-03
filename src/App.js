@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import './App.css';
 import About from './components/About/About';
 import ContactUs from './components/ContactUs/Contactus';
@@ -7,7 +8,10 @@ import NavBar from './components/NavBar/NavBar';
 import Projects from './components/Project/Projects';
 import Resume from './components/Resume/Resume';
 
+
+
 function App() {
+
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -17,7 +21,6 @@ function App() {
         nav.classList.remove("navToBottom")
       }
     }
-    console.log(currentScrollPos < 92)
     if (prevScrollpos > currentScrollPos) {
       nav.style.top = "0";
     } else {
@@ -27,6 +30,8 @@ function App() {
     }
     prevScrollpos = currentScrollPos;
   }
+  
+
   return (
     <div className="App">
       <NavBar />

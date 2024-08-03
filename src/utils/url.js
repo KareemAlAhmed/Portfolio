@@ -1,0 +1,1 @@
+export const base_url="https://portfolio-server-84sa.onrender.com/";
