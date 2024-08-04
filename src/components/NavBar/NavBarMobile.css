@@ -1,0 +1,139 @@
+.menu {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 100%;
+}
+.menu.active .menu__list {
+    opacity: 1;
+    visibility: visible;
+    visibility: visible;
+    transform: scale(1);
+    transition: transform 0.3s, visibility 0s 0s;
+}
+.menu.active .menu__list li a {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 1;
+}
+.menu.active .menu__list li:nth-child(1) a {
+    transition-delay: 0s;
+}
+.menu.active .menu__list li:nth-child(2) a {
+    transition-delay: 0.2s;
+}
+.menu.active .menu__list li:nth-child(3) a {
+    transition-delay: 0.4s;
+}
+.menu.active .menu__list li:nth-child(4) a {
+    transition-delay: 0.6s;
+}
+.menu.active .menu__list li:nth-child(5) a {
+    transition-delay: 0.8s;
+}
+.menu.active .menu__list li:nth-child(6) a {
+    transition-delay: 1s;
+}
+.menu.active .menu__list li:nth-child(7) a {
+    transition-delay: 1.2s;
+}
+.menu.active .menu__list li:nth-child(8) a {
+    transition-delay: 1.4s;
+}
+.menu.active .menu__list li:nth-child(9) a {
+    transition-delay: 1.6s;
+}
+.menu.active .menu__list li:nth-child(10) a {
+    transition-delay: 1.8s;
+}
+.menu .menu__btn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    background: linear-gradient(0deg, rgba(22, 9, 240, 1) 0%, rgba(49, 110, 244, 1) 100%);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+.menu .menu__btn svg{
+    width: 40px;
+    height: 40px;
+    fill: white;
+}
+.light-mode .navBar .menu .menu__btn svg{
+    fill: rgba(0, 0, 0, .9);
+}
+.menu .menu__list {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 0;
+    border-radius: 4px;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 0.3s, visibility 0s 0s;
+    background: linear-gradient(0deg, #1609f0 0%, #316ef4 100%);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+.menu .menu__list li {
+    display: flex;
+    align-items: center;
+}
+.menu .menu__list li a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 25px;
+    color: #fff !important;
+    text-decoration: none;
+    opacity: 0;
+}
+.menu .menu__list li a:hover {
+    color: #000;
+    transition: 0.25s !important;
+    transition-delay: 0s;
+}
+.menu.menu--top-right {
+    position: relative;
+    /* right: 15px;
+    top: 15px;
+    text-align: left; */
+}
+.menu.menu--top-right.active .menu__list {
+    transform: scale(1);
+}
+.menu.menu--top-right.active .menu__list li a {
+    transform: translateX(0);
+}
+.menu.menu--top-right .menu__btn {
+    background: transparent;
+    /* background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%); */
+}
+.menu.menu--top-right .menu__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top right;
+    /* background: #ff1b00;
+    background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%); */
+    background: var(--text-hover-color);
+}
+.menu.menu--top-right .menu__list li a {
+    transform: translateX(10px);
+}

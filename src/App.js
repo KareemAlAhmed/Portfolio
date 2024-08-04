@@ -7,7 +7,8 @@ import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import Projects from './components/Project/Projects';
 import Resume from './components/Resume/Resume';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <Resume />
       <ContactUs />
       <Footer />
+      {/* <ToastContainer /> */}
     </div>
   );
 }

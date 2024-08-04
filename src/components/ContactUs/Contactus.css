@@ -62,3 +62,39 @@
 .contactForm .form-control:hover, .contactForm .form-control:focus {
     border-color: #ffc200;
 }
+.Toastify__toast-container {
+    z-index: 100000000 !important;
+  }
+@media (max-width: 991px){
+
+    .contactus .container{
+        flex-direction: column;
+        padding-right: 1rem;
+    }
+    .contactus iframe{
+        width: 100%;
+    }
+    .contactForm{
+        padding: 0;
+    }
+    .contactForm h2{
+        font-size: 2em;
+    }
+    .contactForm form div{
+        padding-left: 0;
+    }
+    .contactForm form div:last-of-type{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contactInfo{
+        margin-right: 0;
+    }
+
+}
+@media (max-width: 991px) {
+    .contactForm {
+        margin-top: 2em;
+        
+    }
+}

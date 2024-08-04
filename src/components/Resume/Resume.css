@@ -1,0 +1,17 @@
+@media (max-width: 991px){
+
+    .resume .container{
+        flex-direction: column;
+    }
+    .col-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+@media (max-width: 604px) {
+    .timeline small {
+        display: block;
+        margin: 10px 0 0 0;
+    }
+}

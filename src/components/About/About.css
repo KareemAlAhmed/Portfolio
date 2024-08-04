@@ -21,6 +21,9 @@
     display: flex;
     align-items: center;
 }
+.grp-btn{
+    gap: 10px;
+}
 .grp-btn a:nth-child(1):hover{
     color: var(--text-hover-color);
 }
@@ -30,4 +33,28 @@
 }
 .grp-btn a:nth-child(2):hover{
     background-color: var(--text-hover-color);
+}
+@media (max-width: 629px){
+    .about{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+  
+
+    .about .grp-btn  a{
+        margin-right: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width:560px) {
+    .about .grp-btn{
+        flex-direction: column;
+        
+    }
+}
+@media (max-width: 991px) {
+    .about .container{
+        flex-direction: column;
+    }
 }

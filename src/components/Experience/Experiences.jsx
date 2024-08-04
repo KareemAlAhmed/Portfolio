@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Experiences.css"
 import { base_url } from '../../utils/url';
+import Loading from '../LoadingComp/Loading';
 export default function Experiences() {
   let [exp,setExp]=useState([]);
   // let [exp]=useState([
@@ -31,21 +32,28 @@ export default function Experiences() {
   return (
     <div className='experiences col-lg-6 col-12'>
       <h2 className='mb-5'>Experiences</h2>
-      <div className="timeline">
-        {exp.map(ele=>{
-          return <div className="timeline-wrapper py-6 px-0 relative">
-                    <div className="timeline-yr absolute text-center">
-                      <span>{ele.year}</span>
+      <div className="timeline relative">
+
+        {
+          exp.length > 0 ? (
+            exp.map((ele,index)=>{
+              return <div className="timeline-wrapper py-6 px-0 relative" key={index}>
+                        <div className="timeline-yr absolute text-center">
+                          <span>{ele.year}</span>
+                        </div>
+                        <div className="timeline-info">
+                          <h3 className='font-bold '>
+                            <span>{ele.title}</span><br />
+                            <span><h6 className='text-base'>{ele.company}</h6></span>
+                          </h3>
+                          <p className='text-lg font-light'>{ele.description}</p>
+                        </div>
                     </div>
-                    <div className="timeline-info">
-                      <h3 className='font-bold '>
-                        <span>{ele.title}</span><br />
-                        <span><h6 className='text-base'>{ele.company}</h6></span>
-                      </h3>
-                      <p className='text-lg font-light'>{ele.description}</p>
-                    </div>
-                </div>
-        })}
+            })
+          ) : <Loading />
+        }
+       
+        
       </div>
     </div>
   )

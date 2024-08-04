@@ -10,6 +10,7 @@
   --back-color:#0c0c0d;
   --text-hover-color:#ffc200;
   --text-color:#5b5b5b;
+  --place-holder-color:#495057
 }
 body {
   margin: 0;
@@ -20,6 +21,7 @@ body {
   line-height: 1.5;
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
+
 }
 
 ul{
@@ -68,5 +70,56 @@ p {
   max-width: 100%;
 }
 .navToBottom{
-  border-bottom: 1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f !important;
+}
+
+.light-mode{
+  background-color: white;
+}
+.light-mode h1{
+  color: #212121  !important;
+}
+.light-mode h2{
+  color: #353535  !important;
+}
+.light-mode h3,.light-mode h6{
+  color: #484848  !important;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+      
+  }
+  .container{
+    padding-left: 1rem;  
+  }
+}
+
+
+
+@media (min-width: 629px) {
+  .container {
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
 }

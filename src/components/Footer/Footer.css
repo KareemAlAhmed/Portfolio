@@ -1,3 +1,6 @@
+.footer p{
+    color: var(--text-color);
+}
 .footer p:last-of-type a{
     color: #0056b3;
     transition: color 0.3s ease;

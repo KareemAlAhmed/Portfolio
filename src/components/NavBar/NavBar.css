@@ -6,6 +6,43 @@
     border-color: transparent;
     
 }
+.moon{
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+.light-mode .navBar{
+    background-color: white;
+}
+.light-mode .navBrand {
+    color: rgba(0, 0, 0, .9);
+    transition: transform 200ms ease;
+}
+.light-mode .navBrand svg{
+    fill: rgba(0, 0, 0, .9);
+}
+.light-mode .navBrand:hover h1{
+    color: var(--text-hover-color);
+}
+.light-mode .navBrand:hover svg{
+    fill: var(--text-hover-color);   
+}
+
+.light-mode .navBar .container  ul li a{
+    color: rgba(0, 0, 0, .5);
+}
+.light-mode .navBar .container  ul li a:hover{
+    color: var(--text-hover-color);
+}
+.light-mode .navBar .container .theme button,.light-mode .navBar .container .theme svg{
+    color: #212529;
+}
+.light-mode .sun{
+    display: none;
+}
+.light-mode .moon{
+    display: block;
+}
 .navBrand h1{
     margin-bottom: 0;
 }
@@ -15,9 +52,8 @@
 .navBrand:hover svg{
     fill: var(--text-hover-color);
 }
-
-.container{
-    max-width: 1140px;
+.navBar .container{
+    padding-left: 0 ;
 }
 
 .container ul li{
@@ -39,4 +75,34 @@
 .theme button{
     color: white;
 }
-
+.showForMob{
+    display: none;
+}
+@media (max-width: 629px) {
+    .hideForMob{
+        display: none;
+    }
+    .showForMob{
+        display: block;
+    }
+    .navBar{
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+    }
+    .navBar .container{
+        justify-content: space-between ;
+        align-items: end;
+    }
+    
+}
+@media (max-width: 991px) {
+    .hideThemeChanger{
+        display: none;
+    }
+}
