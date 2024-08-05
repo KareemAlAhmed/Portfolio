@@ -48,7 +48,9 @@ export default function ContactUs() {
                 <div className="map">
                     <iframe width="445" height="300" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" id="gmap_canvas"
                     src="https://maps.google.com/maps?width=445&height=300&hl=en&q=%20Tripoli+(tripoli)&t=&z=12&ie=UTF8&iwloc=B&output=embed"></iframe>
-                    <a href='https://www.versicherungen.at/cyber-versicherung/'>Hackerversicherung</a>
+         <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=9c07ef29d1989a17655fca08ff7eab7b3d5c3217'></script>
+                    
+                    <a href='https://www.versicherungen.at/cyber-versicherung/' className='mapA'>Hackerversicherung</a>
                 </div>
                 <div className="contact-text py-6 px-12 flex items-center justify-between">
                     <div className="contact-text-items">

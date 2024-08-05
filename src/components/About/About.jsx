@@ -8,7 +8,7 @@ export default function About() {
       <div className="container mx-auto pr-4  w-full flex">
         <div className="about-text text-5xl font-bold">
           <h1 className='my-6 mx-0'>Hey folks, I'am <span>Kareem Ahmad</span></h1>  
-          <p className='text-lg font-light mb-4'>To obtain a position as a junior web developer where I can leverage my existing skills in Python, HTML, CSS and JavaScript to further develop my technical abilities in computer science and AI . I am eager to gain practical experience in web development and contribute to projects that use cutting-edge technologies. My goal is to continue learning and growing as a developer while making meaningful contributions to a team.</p>           
+          <p className='text-lg font-light mb-4'>My Goal is to obtain a position as a junior web developer where I can leverage my existing skills in Python, HTML, CSS and JavaScript to further develop my technical abilities in computer science and AI . I am eager to gain practical experience in web development and contribute to projects that use cutting-edge technologies. My goal is to continue learning and growing as a developer while making meaningful contributions to a team.</p>           
           <div className="grp-btn flex mt-6">
             <a href='Kareem_Ahmad_CV.pdf' download="Kareem_Ahmad_CV.pdf"  className='custome-btn mr-2'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5">

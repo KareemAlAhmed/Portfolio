@@ -65,6 +65,13 @@
 .Toastify__toast-container {
     z-index: 100000000 !important;
   }
+  .mapA{
+    visibility: hidden;
+    height: 0;
+  }
+  .map div{
+    display: none;
+  }
 @media (max-width: 991px){
 
     .contactus .container{
