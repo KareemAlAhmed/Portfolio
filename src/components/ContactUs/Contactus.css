@@ -89,8 +89,8 @@
         max-width: 100%;
     }
     .contactInfo{
-        margin-right: 0;
-    }
+        margin-right: 0 !important;
+   }
 
 }
 @media (max-width: 991px) {
