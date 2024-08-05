@@ -68,10 +68,14 @@
   .mapA{
     visibility: hidden;
     height: 0;
+    position: absolute;
   }
-  .map div{
+  /* .map div{
     display: none;
-  }
+  } */
+  .contactus iframe{
+    visibility: visible !important;
+}
 @media (max-width: 991px){
 
     .contactus .container{

@@ -91,6 +91,9 @@ p {
 h1, h2, h3, h4, h5, h6{
   font-weight: bold;
 }
+#error_9c07ef29d1989a17655fca08ff7eab7b3d5c3217{
+  display: none;
+}
 @media (max-width: 992px) {
   .col-lg-6 {
     flex: 0 0 100%;
