@@ -75,13 +75,14 @@
         width: 100%;
     }
     .contactForm{
-        padding: 0;
+        padding: 0 !important;
     }
     .contactForm h2{
         font-size: 2em;
     }
     .contactForm form div{
-        padding-left: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
     .contactForm form div:last-of-type{
         flex: 0 0 100%;

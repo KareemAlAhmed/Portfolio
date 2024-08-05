@@ -36,13 +36,13 @@
 }
 @media (max-width: 629px){
     .about{
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
     }
   
 
     .about .grp-btn  a{
-        margin-right: 0;
+        margin-right: 0 !important;
         justify-content: center;
     }
 }

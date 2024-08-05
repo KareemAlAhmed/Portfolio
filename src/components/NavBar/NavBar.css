@@ -80,10 +80,10 @@
 }
 @media (max-width: 629px) {
     .hideForMob{
-        display: none;
+        display: none !important;
     }
     .showForMob{
-        display: block;
+        display: block !important;
     }
     .navBar{
         display: flex;
@@ -103,6 +103,6 @@
 }
 @media (max-width: 991px) {
     .hideThemeChanger{
-        display: none;
+        display: none !important;
     }
 }
