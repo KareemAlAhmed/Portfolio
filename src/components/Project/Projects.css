@@ -1,0 +1,110 @@
+.projectsList{
+    overflow: hidden;
+}
+.projects  h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+
+}
+.project{
+    width: calc((100% / 3) - 40px);
+    background-color: #474559;
+    cursor: pointer;
+}
+.project:hover .pLogo svg g path{
+    fill: var(--text-hover-color);
+}
+.pLogo{
+    width: 100%;
+    height: 250px;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projectLogo path{
+    font-size:medium;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#fff;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;
+    enable-background:accumulate;
+    font-family:Sans;
+  }
+.showMoreBtn{
+    background: transparent;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    font-weight: bold;
+    margin: 16px 0;
+    display: block;
+    width: 100%;
+    padding: .375rem 3rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 48px;
+    width: fit-content;
+    align-self: center;
+}
+.showMoreBtn:hover{
+    background-color: #474559 !important;
+    color: white;
+}
+
+@media (max-width: 629px) {
+    .projectsList {
+        flex-direction: column;
+        padding: 0px 30px;
+        max-height: 790px;
+        flex-wrap: nowrap;
+    }
+    .projects .container{
+        padding-right: 1rem;
+
+    }
+    .project{
+        width: 100%;
+    }
+  }
+
+
+  @media (min-width: 630px) and (max-width: 768px) {
+    .project{
+        width: calc((100% / 2) - 20px);
+    }
+    .projectsList {
+        max-height: 250px;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 991px) {
+    .project{
+        flex: 0 0 calc((100% / 3) - 20px);
+    }
+    .projectsList {
+        max-height: 250px;
+    }
+  }
+  
+  
+  @media (min-width: 992px) {
+    .project{
+        flex: 0 0 calc((100% / 3) - 19px);
+    }
+    .projectsList {
+        max-height: 250px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .project{
+        width: calc((100% / 3) - 40px);
+    }
+    .projectsList{
+        max-height: 250px;
+    }
+  }
+  .showMoreProjects{
+    overflow: visible;
+    max-height: fit-content;
+}

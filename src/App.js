@@ -37,11 +37,10 @@ function App() {
     <div className="App">
       <NavBar />
       <About />
-      <Projects />
       <Resume />
+      <Projects />
       <ContactUs />
       <Footer />
-      {/* <ToastContainer /> */}
     </div>
   );
 }

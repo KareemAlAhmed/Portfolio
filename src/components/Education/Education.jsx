@@ -34,8 +34,8 @@ export default function Education() {
                       </div>
                       <div className="timeline-info">
                         <h3 className='font-bold '>
-                          <span>{ele.title}</span>
-                          <small className='ml-4 text-base font-bold inline-block align-middle'>{ele.level}</small>
+                          <span>{ele.title}</span><br />
+                          <small className='text-base font-bold inline-block align-middle'>{ele.level}</small>
                         </h3>
                         <p className='text-lg font-light'>{ele.description}</p>
                       </div>
